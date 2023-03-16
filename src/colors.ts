@@ -1,0 +1,9 @@
+export const RED_COLOR = "#FF0000";
+export const GREEN_COLOR = "#8FE04E";
+export const YELLOW_COLOR = "#FFC71C";
+export const ORANGE_COLOR = "#FF9B3F";
+export const WHITE_COLOR = "white";
+export const BORDER_GRAY_COLOR = "#F0F0F0";
+export const TEXT_COLOR = "#252626";
+export const GRAY_LIGHT = "#cccccc";
+export const TABLE_HEADER_TEXT_COLOR = "#7a7a7a";
