@@ -10,18 +10,14 @@ type CompetitionScore = "low" | "medium" | "high" | "very high";
 export const DEFAULT_PAGE_INDEX = 1;
 export const DEFAULT_PAGE_SIZE = 25;
 
-export const getCompetitionScore = (score: CompetitionScore) => {
-  switch (score) {
-    case "low":
-      return 0;
-    case "medium":
-      return 1;
-    case "high":
-      return 2;
-    case "very high":
-      return 3;
-  }
+const scoreMap = {
+  "low": 0,
+  "medium": 1,
+  "high": 2,
+  "very high": 3
 };
+
+export const getCompetitionScore = (score: CompetitionScore) => scoreMap[score];
 
 export const sortCompetitions = (
   rowA: Row<KeywordData>,
